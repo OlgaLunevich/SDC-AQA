@@ -89,7 +89,7 @@ describe('removeDuplicates', () => {
   });
 
   it('should throw an error if input is not an array', () => {
-    expect(() removeDuplicates('hello, word!')).to.throw('Input must be an array');
+    expect(() => removeDuplicates('hello, word!')).to.throw('Input must be an array');
     expect(() => removeDuplicates(123)).to.throw('Input must be an array');
   });
 });
