@@ -92,4 +92,4 @@ describe('removeDuplicates', () => {
     expect(() removeDuplicates('hello, word!')).to.throw('Input must be an array');
     expect(() => removeDuplicates(123)).to.throw('Input must be an array');
   });
-})
+});
