@@ -1,0 +1,38 @@
+{
+  "name": "practice_unit",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter mochawesome",
+    "coverage": "c8 npm test && c8 report --reporter=html",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryasrdp/practice_unit.git"
+  },
+  "keywords": [],
+  "author": "Olga Lunevich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryasrdp/practice_unit/issues"
+  },
+  "homepage": "https://github.com/ryasrdp/practice_unit#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.27.1",
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.1",
+    "c8": "^10.1.3",
+    "chai": "^5.2.0",
+    "eslint": "^9.26.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.5.1",
+    "mocha": "^11.1.0",
+    "mochawesome": "^7.1.3"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  }
+}
